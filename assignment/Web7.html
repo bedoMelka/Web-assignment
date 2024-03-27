@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="WEBUIelment.css">
+    <title>WEB UI/UX elements</title>
+    <style>
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background: linear-gradient(to right,lightyellow,pink,lightblue,lightpink);
+}
+#title{margin-left: 400px;
+margin-top: 10px;
+}
+#vectors{
+    margin-left: 450px;
+    margin-top: 10px; 
+}
+
+.top__class {
+    background-color: rgba(240, 240, 240,0.2);
+     width: 96%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.upload_box_container {
+    width: 74%;
+    background: rgb(255,255,255,0.3);
+    height: 318px;
+    margin-left: 15px;
+    border-radius: 10px
+}
+
+.upload__box {
+    background-color:;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+height: 60px;
+margin-left: 10px;
+margin-top: 10px;
+border-style: none;
+}
+
+.left_upload_box {
+    background-color: white;
+    border-style: solid;
+    width: 50%;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-style: none;
+}
+.left_upload_box_elements{margin-left: 95px;
+    margin-top: 10px;
+    line-height: 25px;
+
+
+}
+
+
+input[type=file]{display:none ;
+    width: 150px;
+    height: 20px;
+    border-style: solid;
+}
+.select_item{  width: 150px;
+    height: 30px;
+    border-style: solid;
+cursor: pointer;
+background-color: blue;
+padding-left: 20px;
+opacity: 5;
+}
+input{border: none;}
+.box_picture{margin-left: 40px;
+margin-top: 30px;}
+.text_1box{margin-top: 20px;
+}
+.right_upload_box {
+    background-color: white;
+    border-style: solid;
+    width: 50%;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-style: none;
+}
+.text_2box{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.both_btn{margin-top: 10px;}
+.btn1{
+    
+    width: 100px;
+    height: 30px;
+    margin-right:20px ;
+    border-radius: 5px;
+}
+.btn2{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    margin-right:30px ;
+    border-radius: 5px;
+}
+
+#chk1 {
+    margin-left: 30px;
+}
+
+.check__box {
+    background-color: rgba(240, 240, 240,0.2);
+    display: flex;
+    line-height: 30px;
+   margin-left: 950px;
+   margin-top: -299px;
+   margin-right: 100px;
+    display: flex;
+    gap: 30px;
+    width: 300px;
+    height: 150px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.checkBox_right {
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+.checkBox_left {
+
+    margin-top: 30px;
+    margin-left: -110px;
+    margin-right: 30px;
+
+}
+
+#Rbutton {
+    font-weight: bolder;
+    margin-left: 32px;
+    margin-top: 10px;
+}
+
+.Radio__button {
+    background-color: rgba(240, 240, 240,0.2);
+    margin-left: 950px;
+    margin-top: -299px;
+    margin-right: 100px;
+   
+    display: flex;
+    gap: 30px;
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 40px;
+    display: flex;
+    gap: 50px;
+    line-height: 30px;
+    border-style: none;
+}
+
+.radio_left {
+    margin-top: 45px;
+    margin-left: -150px;
+    margin-right: 30px;
+}
+
+.radio_right {
+    margin-top: -90px;
+    margin-right: 40px;
+
+}
+
+
+.Bottom__class {
+    background: rgb(255,255,255,0.3);
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 220px;
+    margin-left: 30px;
+}
+
+.Search {
+    background: rgb(255,255,255,0.3);
+    width: 300px;
+    border-radius: 10px;
+}
+#search{
+    margin-left: 40px;
+margin-top:15px;
+font-weight: bold;
+}
+.search_elements{
+    margin-left: 40px;
+    margin-top:20px;
+    line-height: 43px;
+    
+}
+.fa fa-search{width: 400px;}
+.default_for_search{background-color:white ;
+opacity: 30;
+width: 180px;
+height: 25px;
+border-style: none;
+
+}
+.focus_for_search{
+    background-color:white ;
+opacity: 30;
+width: 180px;
+height: 25px;
+border-style: none;
+}
+.hover_for_search{background-color:white ;
+    opacity: 30;
+    width: 180px;
+    height: 25px;
+    border-style: none;
+}
+.disable_for_search{background-color:white ;
+    opacity: 30;
+    width: 180px;
+    height: 25px;
+    border-style: none;
+}
+.DropDown {
+    width: 300px;
+    border-radius: 10px;
+    background: rgb(255,255,255,0.3);
+}
+#dropDwn{margin-left: 40px;
+margin-top:15px;
+font-weight: bold;
+}
+.drop_down_elments{
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+#cars{width: 150px;
+margin-right: 30px;}
+.disable_for_dropDwn{background-color: #ccc;
+}
+.Text__field {
+    width: 300px;
+    border-radius: 10px;
+    background: rgb(255,255,255,0.3);
+}
+#text_field{margin-left: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.text_field_elements{
+    margin-left: 40px;
+    line-height: 22px;
+   margin-top: -25px;
+
+    border-width: 10px;
+
+}
+input[type=text]{
+text-align: center;
+}
+#pr1{margin-left: 80px;
+margin-top: -12px;}
+#pr2{margin-left: 80px;
+    margin-top: -12px;}
+    #pr3{margin-left: 80px;
+        margin-top: -10px;}
+        #pr4{margin-left: 80px;
+            margin-top: -12px;}
+
+.disable_for_textField{background-color: #ccc;}
+.Slide_and__switch {
+    background: rgb(255,255,255,0.3);
+    width: 300px;
+    border-radius: 10px;
+}
+#switch_and_slider{margin-left: 40px;
+    margin-top:10px;
+    font-weight: bolder;}
+    .slider_elements{ 
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+ 
+
+
+
+
+.search-container {
+  position: relative;
+}
+
+input[type="text"] {
+  padding-left: 30px; /* Adjust the padding to make space for the icon */
+}
+
+.slider2{display: flex;
+flex-direction: column;
+margin-left:  145px;
+width: 30px;
+line-height: 30px ;
+margin-top: -190px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: -30px;
+    height: -30;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  input:checked + .slider{
+    background-color: #2196F3;
+  }
+
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 40%;
+  }
+
+
+  .slider_elements{margin-left: 10px;
+margin-top: 0px;
+gap: 10px;}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h3 id="title">WEB UI/UX ELEMENTS </h3>
+    <H4 id="vectors">vectors</H4>
+
+    <div class="top__class">
+        <div class="upload_box_container">
+            <h2>upload box</h2>
+            <div class="upload__box">
+
+                <div class="left_upload_box">
+                    <div class="left_upload_box_elements">
+                        <div class="select_item">
+                           
+         <input type="file" id="select">
+                      <Label for="select">+ Select file</Label>   
+                     </div>
+
+
+                        <div class="box_picture">
+                            <img src="box.jpg.png" width="90px" height="40px">
+                        </div>
+                        <div class="text_1box">
+                            <h3>Drop or drag files here</h3>
+                            <p><i class="fa fa-check"></i>only <b>jpg</b> file...</p>
+                            <p><i class="fa fa-check"></i>200 files music</p>
+                            <p><i class="fa fa-check"></i>Each file connot excedes 2MB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_upload_box">
+                    <div class="right_sign">
+                        <!--img src="Eo_circle_green_checkmark.svg.png" width="100px" height="70px"-->
+                        <i class="fa fa-check-circle" style="font-size:80px;color:green"></i>
+                    </div>
+                    <div class="text_2box">
+                        <h4>Files downloaded Succussesfully</h4>
+                        <p>file dowloades is from this the diveses</p>
+                        
+                    </div>
+                    <div class="both_btn">
+                        <input type="button" class="btn1" value="Button">
+                        <input type="button" class="btn2" value="Button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="check__box">
+        <h3 id="chk1">checkbox</h3>
+
+        <div class="checkBox_left"><br>
+            <input type="checkbox" disabled>default<br>
+            <input type="checkbox" disable>hover<br>
+            <input type="checkbox" disable>disable<br>
+        </div>
+        <div class="checkBox_right">
+            <input type="checkbox" checked>default<br>
+            <input type="checkbox" checked>hover<br>
+            <input type="checkbox" disable>disable<br>
+        </div>
+    </div>
+    <div class="Radio__button ">
+        <p id="Rbutton">Radio Buttons</p>
+        <form>
+            <div class="radio_left">
+                <input type="radio" name="buttons" checked>default<br>
+                <input type="radio" name="buttons" checked>hover<br>
+                <input type="radio" name="buttons" checked>disable<br>
+            </div>
+            <div class="radio_right">
+                <input type="radio" name="buttons" checked>default<br>
+                <input type="radio" name="buttons" checked>hover<br>
+                <input type="radio" name="buttons" checked>disable<br>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+    <div class="Bottom__class">
+        <div class="Search">
+            <p id="search">
+            <p id="search">Search</p>
+            <div class="search_elements">
+                <div class="container">
+                    
+                       <label>default:<button class="default_for_search"><i class="fa fa-search"></i> placeholder<i class="fa fa-dot-circle-o"></i></button><br>
+                        
+                        </label>
+                        
+                     <label for="focus">focus:<button class="focus_for_search"  ><i class="fa fa-search"></i> placeholder<i class="fa fa-dot-circle-o"></i></button></label><br>
+                        
+                    
+                    
+                        <label for="hover">hover:<button class="hover_for_search"><i class="fa fa-search"></i> placeholder<i class="fa fa-dot-circle-o"></i></button></label><br>
+                        
+                    
+                    
+                        <label for="disable">disable:<button class="disable_for_search"><i class="fa fa-search"></i> placeholder<i class="fa fa-dot-circle-o"></i></button></label><br>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <div class="DropDown">
+            <div class="Dropdwn_text">
+                <p id="dropDwn">DropDown</p>
+            </div>
+            <div class="drop_down_elments">
+                <form action="">
+                    <label for="cars">default: </label>
+                    <select id="cars" name="cars">
+                        <option value="search">search</option>
+                        <option value="saab">default1</option>
+                        <option value="fiat">default2</option>
+                        <option value="audi">default3</option>
+                    </select><br><br>
+                </form>
+                <form action="">
+                    <label for="cars">focus:</label>
+                    <select id="cars" name="cars">
+                        <option value="search">search</option>
+                        <option value="saab">focus1</option>
+                        <option value="fiat">focus2</option>
+                        <option value="audi">focus3</option>
+                    </select><br><br>
+                </form>
+                <form action="">
+                    <label for="cars">hover:</label>
+                    <select id="cars" name="cars">
+                        <option value="search">search</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select><br><br>
+                </form>
+                <form action="">
+                    <label for="cars">disable:</label>
+                    <select id="cars" name="cars">
+                        <option value="">search</option>
+                        <option value="saab">disable2</option>
+                        <option value="fiat">disable3</option>
+                        <option value="audi">disable4</option>
+                    </select><br><br>
+                </form>
+                <form action="">
+                    <label for="cars" >disable:</label>
+                    <select id="cars" name="cars"class="disable_for_dropDwn">
+                        <option value="">search</option>
+                        <option value="saab">disable2</option>
+                        <option value="fiat">disable3</option>
+                        <option value="audi">disable4</option>
+                    </select><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="Text__field">
+            <p id="text_field">TEXT FIELD</p><br><br>
+            <div class="text_field_elements">
+                <label for="cars">default:
+                    <input type="text"  placeholder="placeholder" style="outline-style: none;">
+                    <p id="pr1"><small> some text is here</p></small>
+                </label>
+                <label for="cars">hover:
+                    <input type="text" width="" height="" placeholder="placeholder">
+                    <p id="pr2"><small>some text is here</p></small>
+                </label>
+                <label for="cars">disable:
+                    <input type="text" width="" height="" placeholder="placeholder">
+                    <p id="pr3"><small>some text is here</p></small>
+                </label><br>
+                <label for="cars">disable:
+                    <input type="text" width="" height="" placeholder="placeholder"class="disable_for_textField">
+                    <p id="pr3"><small>some text is here</p></small>
+                </label><br>
+            </div>
+        </div>
+
+        <div class="Slide_and__switch">
+            <p id="switch_and_slider">Slider & Switch</p>
+            <div class="slider_elements">
+<h4>focus</h4>
+                <label class="switch">
+                    <input type="checkbox"checked>
+                    <span class="slider round"></span>
+                </label><br>
+
+                <label class="switch">
+                    <input type="checkbox" disabled>
+                    <span class="slider round"></span>
+                </label><br>
+                <h5>with alert</h5>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round">on</span>
+                </label><br>
+                <label class="switch">
+                    <input type="checkbox" disabled >
+                    <span class="slider round">off</span>
+                </label><br>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"><i class="fa fa-check"></i></span>
+                </label><br>
+            </div>
+            <div class="slider2">
+                <div class="slides_1">
+
+                    <input type="range" min="1" max="100" value="5" step="10"><br>
+                </div>
+                <div class="slides_2">
+                    <input type="range" min="20" max="100" value="50"><br>
+                </div>
+                <div class="slides_3">
+                    <input type="range" min="50" max="60" value="50"><br>
+                </div>
+                <div class="slides_4">
+                    <input type="range" min="1" max="10" value="20"><br>
+                </div>
+                <div class="slides_5">
+                    <input type="range" min="1" max="70" value="50"><br>
+                </div>
+                <div class="slides_6">
+                    <input type="range" min="1" max="100" value="10"><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
